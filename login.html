@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body Text="black" background="C:/Users/rhapa/Downloads/11.jpg"style="background-repeat:no-repeat;background-size:100%"></body>
+
+    <title>Log In Page</title>
+</head>
+<body>
+
+       <center><div class="container">
+          <h1 style="font-family:Georgia,'Times New Roman',Times,serif;color:rgb(0, 0, 0)">
+          <label for="uname"><b>Username:</b></label>
+          <input type="text" id="uname" placeholder="Enter Username" name="uname" required>
+      
+          <label for="psw"><b>Password:</b></label>
+          <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+       
+        </div>
+        <h1 style="font-family:Georgia,'Times New Roman',Times,serif;color:rgb(0, 0, 0)">
+            <button type="submit" id="loginbtn" onclick="login()">Login</button>
+          <button type="button" id="cancelbtn" onclick="cancelbtn()">Cancel</button>
+        </div></h1>
+      </center> 
+      <script >
+          let uname,upass
+
+function login(){
+    uname=document.getElementById("uname").value
+    upass=document.getElementById("psw").value
+   if(uname=="" || upass==""){
+    window.alert("Invalid Login.");
+   }else{
+    
+    
+   if(uname=="jizan" && upass=="jizan"){
+    location.href = "finals.html";
+   }else{
+    window.alert("The password you entered is incorrect.Please try again.");
+   }
+   }
+}
+
+function cancelbtn(){
+    window.alert("This is programmed by: Jizan Mae G. Aspacio\nMaria Gracia");
+    //point to homepage
+}
+      </script>
+</body>
+</html>

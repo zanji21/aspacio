@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <body Text="black" background="C:/Users/rhapa/Downloads/17.jfif"style="background-repeat:no-repeat;background-size:100%"></body>
+
+<title>Admin Page</title>
+</head>
+
+<style>
+
+    .sad{
+    background-color:rgb(238, 179, 240);
+    }
+    .sad:hover{
+    background-color: rgb(248, 105, 188);
+    border:5px;
+    border-radius:25px;
+    }
+    
+        th{ 
+            color:rgb(243, 85, 177);
+                }
+    </style>
+
+<div style="border:rgb(243, 191, 227); border-width:20px; border-style:double;">
+    <br><body style="background: url(11.png); backround-position: center center; background-repeat: no-repeat; background-size: cover;">
+    <h1 style="font-size:80px" align="center"><img src="C:/Users/rhapa/Downloads/aaa.png";style="border-radius:50%" width="220px" height="220px" align="center">
+    <span style="font-family:Georgia,'Times New Roman',Times,serif;color:rgb(243, 85, 177)"> MEIJI'Z FASHION STUFF</span> </h1>
+    <hr>
+    </div>
+    
+</style >
+    <div> 
+        <center>
+        <a href="index.html"><li style="float:right; display:block; padding:10px; color:black; text-decoration:none; font-size:15px; margin-top: 5px;margin: right 10px;" class="sad"><b>Home</b></li></a>
+        <a href="finals.html"><li style="float:right; display:block; padding:10px; color:black; text-decoration:none; font-size:15px;margin-top: 5px;margin: right 10px;" class="sad"><b>Admin</b></li></a>
+    </ul>
+        </div></center>
+
+<center>
+    <div>
+    <button type="button" id="viewtable" onclick="viewTable()">
+    <h3 style="font-family:Georgia,'Times New Roman',Times,serif;color:rgb(0, 0, 0),"> Product List</button>
+    <div id="viewT"></div> </center>
+   
+     <script >
+     function viewTable(Products){
+    var Products = [
+    {"ProductID": 01,"Brand": "ZARA","ProductName": "Basic Ribbed Tshirt", "Price": 150.00 },
+    {"ProductID": 02,"Brand": "ZARA","ProductName": "Boy friend Short","Price": 200.00},
+    {"ProductID": 03,"Brand": "Forever21","ProductName": "Tie Dress","Price": 120.00},
+    {"ProductID": 04,"Brand": "Forever21","ProductName": "CropTop","Price": 150.00},
+    {"ProductID": 05,"Brand": "Nike","ProductName": "Embroid Shirt","Price": 200.00},
+    {"ProductID": 06,"Brand": "Nike","ProductName": "Board Short","Price": 250.00},
+    {"ProductID": 07,"Brand": "Adidas","ProductName": "Premium Shirt","Price": 250.00},
+    {"ProductID": 08,"Brand": "Adidas","ProductName": "Fashion Cap","Price": 300.00}, 
+    ] 
+var mainContainer = document.getElementById("viewT");    
+for (var i = 0; i < Products.length; i++) {
+  var div = document.createElement("div");
+  div.innerHTML = 'Product ' + Products[i].ProductID + ': ' + Products[i].Brand + Products[i].ProductName + ' ₱' + Products[i].Price;
+  mainContainer.appendChild(div);
+} 
+}            
+</script>
+</body>
+</html>
